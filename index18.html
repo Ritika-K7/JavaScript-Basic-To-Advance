@@ -18,12 +18,21 @@
     //    personObj.firstName='Ram';
     //    console.log(personObj)
 
-    // ----------------------How to manipulate HTML element by JS---------------------
+
+
+    // ----------------------How to manipulate HTML element by JS-------------------------
     console.log(document);
-    // document-Object , getElementById()-method on object(document)
-    document.getElementById("uniqueId");
+    var element=document.getElementById("uniqueId"); // document-Object , getElementById()-method on object(document)
+    console.log(element.innerText) //innerText helps to print the text inside tags (Ex. here h1 tag)
 
+    // To change the value of innerText
+    element.innerText='Ritika learns DOM manipulation';
+    console.log(element.innerText)
 
+    // To change color
+    element.style.color='red'
+    element.style.border='3px dotted Blue'
+    element.style.backgroundColor='green'
     </script>
 </body>
 </html>
