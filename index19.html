@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EventListener-Change color by button click</title>
+</head>
+<body>
+    <h1 id="headerElement">Hello World! Index 19</h1>
+    <button id="changeColorBtn">Change Color</button>
+
+    <script>
+        var btn=document.getElementById('changeColorBtn');
+        btn.addEventListener('click',function(){
+            var element=document.getElementById('headerElement');
+            element.style.color='red';
+        });
+ 
+        // Syntax
+        // element.addEventListener(event, function, useCapture);
+    </script>
+</body>
+</html>
