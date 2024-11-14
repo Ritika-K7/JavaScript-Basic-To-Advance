@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Element</title>
+</head>
+<body>
+    <h1>Hello World! Index 21</h1>
+    <input id="inputfieldFirstName" placeholder="FirstName" type="text ">
+    <input id="inputfieldLastName" placeholder="lastName" type="text ">
+    <button id="submit">Submit</button>
+    <h2 id="displayFullName"></h2>
+    
+    <script>
+        var firstNameE1=document.getElementById("inputfieldFirstName");
+        var lastNameE1=document.getElementById("inputfieldLastName");
+        var fullNameE1=document.getElementById("displayFullName")
+        var btn = document.getElementById("submit");
+        btn.addEventListener('click',function(){
+            console.log(firstNameE1.value,lastNameE1.value);
+            var fullName=firstNameE1.value +" "+ lastNameE1.value;
+            fullNameE1.innerText=fullName;
+        });
+    </script>
+</body>
+</html>
