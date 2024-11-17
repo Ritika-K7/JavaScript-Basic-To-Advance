@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Scope</title>
+</head>
+<body>
+    <h1>Hello World! index26</h1>
+    <script>
+        //EX-1
+        var firstName='Ram'//Global Variable
+        function displayName(){
+            var lastName ='Singh'//Local Scope
+            console.log(firstName,lastName)
+        }
+        displayName();
+
+        //trying to access local variable -ERROR!
+        //console.log(firstName,lastName)
+
+
+        // EX-2
+        function displayName(){
+            var lastName ='Singh'//Local Scope
+            function displayFullName(){
+                console.log(firstName,lastName)
+            }     
+            displayFullName();     
+        }
+        displayName();
+
+    </script>
+    
+</body>
+</html>
