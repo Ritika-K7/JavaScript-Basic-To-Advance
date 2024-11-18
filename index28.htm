@@ -11,12 +11,18 @@
 
     </div>
     <script>
-        var todos=['car wash','cat food','gaming','home work']
-        var todosE1=document.getElementById('toDoContainer')
-        var textNode=document.createTextNode('Car Wash');
-        var pE1=document.createElement('p')
-        pE1.appendChild(textNode);
-        todosE1.appendChild(pE1);
+        var todos=['car wash','cat food','gaming','home work','play cricket']
+        var todosE1=document.getElementById('toDoContainer');
+
+        for(var i=0;i<todos.length;i++){
+
+            var textNode=document.createTextNode(todos[i]);
+            var pE1=document.createElement('p')
+            pE1.appendChild(textNode);
+            todosE1.appendChild(pE1);
+
+        }
+        
         
     </script>
     
