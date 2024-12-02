@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+</head>
+<body>
+    <input id='inputField' placeholder="To Dos">
+    <button id="submitButton">Sumbit</button>
+    <div id="toDoContainer">
+
+    </div>
+    <script>
+        var todos=[]
+        var todosE1=document.getElementById('toDoContainer');
+        var inputE1= document.getElementById("inputField")
+        var submitBtnE1=document.getElementById("submitButton")
+        submitBtnE1.addEventListener('click',function(){
+            var inputValue =inputE1.value;
+            todos.push(inputValue);
+            inputE1.value="";
+            todosE1.innerHTML="";
+            todos.reverse();
+            for(var i=0;i<todos.length;i++){
+                var displayText=(i+1)+". "+todos[i];
+                var textNode=document.createTextNode(displayText);
+                var pE1=document.createElement('p')
+                pE1.appendChild(textNode);
+                todosE1.appendChild(pE1);
+            }
+        });       
+    </script>
+    
+</body>
+</html>
