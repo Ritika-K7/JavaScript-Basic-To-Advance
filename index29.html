@@ -9,7 +9,8 @@
     <h1>Hello9 World! index 29</h1>
 
     <script>
-        //function declaration
+        //Two ways to write function-
+        //1.function declaration
         /*
          function addTwoNumber(Num1,Num2){
             var res=Num1+Num2
@@ -19,11 +20,13 @@
          console.log(result);
          */
 
-         //function expression
-         var addTwoNumber=function(num1,num2){ //ananomus function 
+         //2.function expression
+         var addTwoNumber=function(num1,num2){ //ananomus function which is assigned to a variable
             var res=num1+num2;
             return res
-         }
+         };
+         var res=addTwoNumber(10,6)
+         console.log(res)
 
     </script>
 </body>
