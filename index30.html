@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting Behaviour</title>
+</head>
+<body>
+    <h1>Hello World! index 30</h1>
+
+    <script>
+        // var x ; //variable declaration
+        // x=5;    //variable initialization(value assign)
+        // console.log(x)
+
+       /*
+        Hoisting-
+        a variable can be used before it has been declared
+        Hoisting is JavaScript's default behavior of moving 
+        all declarations to the top of the current scope
+        */
+        console.log(x);
+        var x;
+        x=5;//JS only hoist the declaration not their values.
+
+
+        function display(){
+            y=10;
+            console.log(y);
+            var y;
+        }
+        display();
+        console.log(y);
+        
+    
+    </script>
+</body>
+</html>
