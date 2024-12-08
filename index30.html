@@ -19,18 +19,28 @@
         Hoisting is JavaScript's default behavior of moving 
         all declarations to the top of the current scope
         */
-        console.log(x);
-        var x;
-        x=5;//JS only hoist the declaration not their values.
+
+        // console.log(x);
+        // var x;
+        // x=5;//JS only hoist the declaration not their values.
 
 
-        function display(){
-            y=10;
-            console.log(y);
-            var y;
+        // function display(){
+        //     y=10;
+        //     console.log(y);
+        //     var y;
+        // }
+        // display();
+        // console.log(y);
+
+       
+
+        var displayName =function (){
+            console.log('Ram')
         }
-        display();
-        console.log(y);
+        displayName();
+        //console.log(displayName)
+        var displayName
         
     
     </script>
